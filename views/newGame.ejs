@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add New Game</title>
+  <style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    
+      
+    }
+    .container {
+        width: 80%;
+        margin: 5px auto;
+        background: white;
+        padding: 5px;
+        
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    label {
+        margin-top: 5px;
+    }
+    input, textarea, button {
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-size: 16px;
+        max-width : 600px;
+    }
+    button {
+        background-color: blue;
+        color: white;
+        border: none;
+        cursor: pointer;
+        margin-top: 20px;
+        max-width: 80px;
+    }
+    button:hover {
+        background-color: #027bfe;
+    }
+    a {
+        text-decoration: none;
+        color: #027bfe;
+        display: inline-block;
+        margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>New Game</h1>
+    <form action="/games" method="post">
+      
+      <input type="text" id="name" name="name" placeholder="title" required>
+
+    
+      <textarea id="description" name="description" placeholder="description" required></textarea>
+
+    
+      <input type="text" id="type" name="type" placeholder="type" required>
+
+      <input type="number" id="minimum-age" name="minimumAge" placeholder="minimum age" required>
+
+      <input type="text" id="pricing-hourly" name="priceHourly" placeholder="price (Hourly)" required>
+
+      <input type="text" id="pricing-per-game" name="pricePerGame" placeholder="price (Per Game)" required>
+
+      <input type="text" id="image-path" name="imagePath" placeholder="image path" required>
+
+      <input type="text" id="image-alt-text" name="imageAltText" placeholder="image alt text" required>
+
+      <button type="submit">Save</button>
+      <a href="/games">Cancel</a>
+    </form>
+  </div>
+</body>
+</html>
