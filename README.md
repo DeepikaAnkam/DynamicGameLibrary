@@ -25,10 +25,10 @@ This project is a testament to full-stack development proficiency, with a focus 
 
 To get a local copy up and running follow these simple steps.
 
-####Installation
-Clone the repository
-Install NPM packages for the backend
-npm install
-npm start
+#### Installation
+- Clone the repository
+- Install NPM packages 
+- npm install
+- npm start
 
 
